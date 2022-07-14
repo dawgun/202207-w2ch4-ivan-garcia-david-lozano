@@ -6,7 +6,7 @@ class SkylabArray {
     this.length = values.length;
   }
 
-  length(newValue) {
+  checkerLength(newValue) {
     let counterLength = 0;
     while (newValue[counterLength] !== undefined) {
       counterLength += 1;
