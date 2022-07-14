@@ -1,20 +1,19 @@
 const SkylabArray = require("../SkylabArray");
 
-describe("Give a method of a class", () => {
-  describe("When it's called and it receive a new element", () => {
-    test("Then it's should return the object plus teh new element", () => {
-      const miArray = new SkylabArray(1);
+describe("Give a method of an object", () => {
+  describe("When it's called and it receive the value 3 ,index zero in object is 1 and lenght 1", () => {
+    test("Then it's should return the object with new value in next index and length 2", () => {
+      const initialObjectValue = 1;
+      const inputValue = 3;
 
-      const value1 = 3;
-      const expectedResult = {
-        0: 1,
-        1: 3,
-        length: 2,
-      };
+      const expectedIndexZeroResult = 1;
+      const expectedIndexOneResult = 3;
 
-      const receivedResult = miArray.push(value1);
+      const testObject = new SkylabArray(initialObjectValue);
+      testObject.push(inputValue);
 
-      expect(receivedResult).toEqual(expectedResult);
+      expect(testObject[0]).toEqual(expectedIndexZeroResult);
+      expect(testObject[1]).toEqual(expectedIndexOneResult);
     });
   });
 });
