@@ -8,3 +8,5 @@ class SkylabArray {
     this.length = values.length;
   }
 }
+
+module.exports = SkylabArray;
