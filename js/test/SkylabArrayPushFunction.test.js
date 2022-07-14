@@ -1,4 +1,4 @@
-const SkylabArray = require("../SkylabArray");
+const SkylabArray = require("../SkylabArray.js");
 
 describe("Give a method of an object", () => {
   describe("When it's called and it receive the value 3 ,index zero in object is 1 and lenght 1", () => {
