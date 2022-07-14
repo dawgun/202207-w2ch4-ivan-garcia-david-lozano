@@ -9,11 +9,8 @@ class SkylabArray {
   push(newElement) {
     const previousIndex = this.length;
     this[previousIndex] = newElement;
+    this.length += 1;
   }
 }
 
-const miArray = new SkylabArray(1, 2);
-
-miArray.push(3);
-
-console.log(miArray);
+export default SkylabArray;
