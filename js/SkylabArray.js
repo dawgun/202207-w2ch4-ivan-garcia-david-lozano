@@ -12,8 +12,4 @@ class SkylabArray {
   }
 }
 
-const miArray = new SkylabArray(1, 2);
-
-miArray.push(3);
-
-console.log(miArray);
+module.exports = SkylabArray;
