@@ -1,19 +1,17 @@
-import SkylabArray from "./SkylabArray";
+const SkylabArray = require("./SkylabArray");
 
-describe("Give a method of a class", () => {
-  describe("When it´s called and it receive a new element", () => {
-    test("Then it´s should return the object plus teh new element", () => {});
-    const miArray = new SkylabArray(1);
+describe("Given a constructor", () => {
+  describe("When it's called and it recieves 2 and 5", () => {
+    test("Then it should be an object with 2 in index zero and 5 in index one ", () => {
+      const firstValue = 2;
+      const secondValue = 5;
+      const expectedZeroIndexReturn = 2;
+      const expectedFirstIndexReturn = 5;
 
-    const value1 = 3;
-    const expectedResult = {
-      0: 1,
-      1: 3,
-      length: 2,
-    };
+      const objectReturned = new SkylabArray(firstValue, secondValue);
 
-    const receivedResult = miArray.push(value1);
-
-    expect(receivedResult).toEqual(expectedResult);
+      expect(objectReturned[0]).toBe(expectedZeroIndexReturn);
+      expect(objectReturned[1]).toBe(expectedFirstIndexReturn);
+    });
   });
 });

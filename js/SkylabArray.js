@@ -13,4 +13,4 @@ class SkylabArray {
   }
 }
 
-export default SkylabArray;
+module.exports = SkylabArray;
