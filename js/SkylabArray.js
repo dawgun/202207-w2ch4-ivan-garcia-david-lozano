@@ -17,7 +17,7 @@ class SkylabArray {
   push(newElement) {
     const previousIndex = this.length;
     this[previousIndex] = newElement;
-    this.length += 1;
+    return (this.length += 1);
   }
 }
 
